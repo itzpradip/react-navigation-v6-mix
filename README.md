@@ -8,8 +8,11 @@ Here you'll find most of the navigator available in React Navigation along with 
 
 - [Getting Started with Stack Navigation 6 | Stack Navigator](https://www.youtube.com/watch?v=FWwKjxSgLl8)
 
-- [Gaming App in UI](https://www.youtube.com/watch?v=I5doVFcG94U&t=548s)
+- [Gaming App in UI](https://www.youtube.com/watch?v=I5doVFcG94U)
+
+- [Custom Drawer Navigator in React Navigation 6](https://youtu.be/l8nY4Alk70Q)
 
 # App Screenshots
 
 ![Gaming App UI](./screenshots/gaming-app-ui.png)
+![Custom Drawer](./screenshots/custom-drawer-iphone.png)
