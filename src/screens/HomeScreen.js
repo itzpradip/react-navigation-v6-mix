@@ -41,12 +41,12 @@ export default function HomeScreen({navigation}) {
           <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
             Hello John Doe
           </Text>
-          <TouchableOpacity onPress={()=>navigation.openDrawer()}>
-          <ImageBackground
-            source={require('../assets/images/user-profile.jpg')}
-            style={{width: 35, height: 35}}
-            imageStyle={{borderRadius: 25}}
-          />
+          <TouchableOpacity onPress={() => navigation.openDrawer()}>
+            <ImageBackground
+              source={require('../assets/images/user-profile.jpg')}
+              style={{width: 35, height: 35}}
+              imageStyle={{borderRadius: 25}}
+            />
           </TouchableOpacity>
         </View>
 
@@ -110,6 +110,12 @@ export default function HomeScreen({navigation}) {
               title={item.title}
               subTitle={item.subtitle}
               isFree={item.isFree}
+              onPress={() =>
+                navigation.navigate('GameDetails', {
+                  title: item.title,
+                  id: item.id,
+                })
+              }
             />
           ))}
         {gamesTab == 2 &&
@@ -121,6 +127,12 @@ export default function HomeScreen({navigation}) {
               subTitle={item.subtitle}
               isFree={item.isFree}
               price={item.price}
+              onPress={() =>
+                navigation.navigate('GameDetails', {
+                  title: item.title,
+                  id: item.id,
+                })
+              }
             />
           ))}
       </ScrollView>

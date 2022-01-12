@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import { windowWidth } from '../utils/Dimensions';
 
-export default function ListItem({photo, title, subTitle, isFree, price}) {
+export default function ListItem({photo, title, subTitle, isFree, price, onPress}) {
   return (
     <View style={{
       flexDirection:'row',
@@ -37,7 +37,7 @@ export default function ListItem({photo, title, subTitle, isFree, price}) {
         </View>
       </View>
 
-      <TouchableOpacity style={{
+      <TouchableOpacity onPress={onPress} style={{
         backgroundColor:'#0aada8',
         padding:10,
         width: 100,
